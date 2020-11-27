@@ -20,7 +20,7 @@ fun main() {
         nodes.forEach { node->
             if (node.trySendFrame()) {
                 val timeS = String.format(Locale.US, "%.15f", Clock())
-                println("com.pavelkrylov.csma_cd.Node ${node.nodeId} started broadcasting at $timeS time.")
+                println("Node ${node.nodeId} started broadcasting at $timeS time.")
             }
         }
         Clock.tick()
